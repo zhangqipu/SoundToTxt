@@ -3,4 +3,4 @@
 
 ![效果图1](SoundToTxt1.png)
 
-![效果图1](SoundToTxt1.png)
+![效果图1](SoundToTxt2.png)

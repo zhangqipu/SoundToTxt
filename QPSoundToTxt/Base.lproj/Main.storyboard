@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8A-U9-DIf">
+                                <rect key="frame" x="300" y="0.0" width="300" height="600"/>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.62352941176470589" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="录音文本" image="note.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="meetingNoteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4m-My-hbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHN-OE-9FP">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.65098039215686276" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="会议录音" image="micro.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="meetingBeginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2iv-kx-eKy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aHN-OE-9FP" secondAttribute="width" multiplier="2:1" id="0AR-W1-RYj"/>
+                            <constraint firstItem="aHN-OE-9FP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CAv-7O-MqG"/>
+                            <constraint firstItem="w8A-U9-DIf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RWP-ml-CDu"/>
+                            <constraint firstAttribute="bottom" secondItem="w8A-U9-DIf" secondAttribute="bottom" id="WUK-Ts-e9s"/>
+                            <constraint firstAttribute="trailing" secondItem="w8A-U9-DIf" secondAttribute="trailing" id="d2c-wQ-pWA"/>
+                            <constraint firstAttribute="bottom" secondItem="aHN-OE-9FP" secondAttribute="bottom" id="fw8-dR-c7o"/>
+                            <constraint firstItem="aHN-OE-9FP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oZB-jp-UcC"/>
+                            <constraint firstItem="w8A-U9-DIf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="vlc-LX-JSZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="micro.png" width="31" height="35"/>
+        <image name="note.png" width="23" height="35"/>
+    </resources>
+</document>

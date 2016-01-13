@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectFileController">
+            <connections>
+                <outlet property="tableView" destination="DOL-ec-eOn" id="tfR-vV-Mwf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DOL-ec-eOn">
+                    <rect key="frame" x="0.0" y="64" width="600" height="516"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Th-HW-40A"/>
+                        <outlet property="delegate" destination="-1" id="dZZ-lc-BfV"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左滑可删除" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-NT-7eW">
+                    <rect key="frame" x="0.0" y="580" width="600" height="20"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TO7-rz-0wu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DOL-ec-eOn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5nj-Wy-TAe"/>
+                <constraint firstAttribute="bottom" secondItem="DOL-ec-eOn" secondAttribute="bottom" constant="20" id="Hf0-hK-UfQ"/>
+                <constraint firstAttribute="trailing" secondItem="DOL-ec-eOn" secondAttribute="trailing" id="J82-LQ-86B"/>
+                <constraint firstItem="bqT-NT-7eW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JLk-Bm-9Be"/>
+                <constraint firstAttribute="bottom" secondItem="bqT-NT-7eW" secondAttribute="bottom" id="S3f-J7-1MV"/>
+                <constraint firstItem="DOL-ec-eOn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="cAp-1C-f3j"/>
+                <constraint firstAttribute="trailing" secondItem="bqT-NT-7eW" secondAttribute="trailing" id="zR0-b5-u12"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

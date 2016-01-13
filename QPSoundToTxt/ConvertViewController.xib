@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConvertViewController">
+            <connections>
+                <outlet property="activityView" destination="ls9-cC-zSj" id="pIJ-Q6-qnt"/>
+                <outlet property="textView" destination="pWg-om-Z2o" id="zkQ-J3-gBY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWg-om-Z2o">
+                    <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="GEj-vh-y1s"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88j-M9-Ciw">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Nyv-J1-Ggh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="3En-E7-gdW"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-cC-zSj">
+                    <rect key="frame" x="282" y="291" width="37" height="37"/>
+                    <color key="color" red="1" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="ls9-cC-zSj" secondAttribute="centerX" id="DSL-Wo-9lP"/>
+                <constraint firstAttribute="bottom" secondItem="88j-M9-Ciw" secondAttribute="bottom" id="Tp6-ur-NUx"/>
+                <constraint firstAttribute="centerY" secondItem="ls9-cC-zSj" secondAttribute="centerY" constant="-9.5" id="hCG-wK-c2z"/>
+                <constraint firstAttribute="trailing" secondItem="88j-M9-Ciw" secondAttribute="trailing" id="qF1-es-0Kr"/>
+                <constraint firstAttribute="bottom" secondItem="pWg-om-Z2o" secondAttribute="bottom" constant="44" id="vAR-CI-XKc"/>
+                <constraint firstItem="pWg-om-Z2o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xFs-dl-0PI"/>
+                <constraint firstItem="88j-M9-Ciw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yTt-4z-oki"/>
+                <constraint firstItem="pWg-om-Z2o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="z3J-IZ-8CG"/>
+                <constraint firstAttribute="trailing" secondItem="pWg-om-Z2o" secondAttribute="trailing" id="zat-lj-aA6"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
